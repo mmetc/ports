@@ -1,6 +1,7 @@
 PORTNAME=	crowdsec
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.5.0
+DISTVERSION=	1.5.1
+DISTVERSIONSUFFIX=	-freebsd
 CATEGORIES=	security
 
 MAINTAINER=	marco@crowdsec.net
@@ -10,15 +11,12 @@ WWW=		https://github.com/crowdsecurity/crowdsec
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	git:devel/git@lite
-
 USES=		gmake go:no_targets
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	crowdsecurity
 GH_PROJECT=	crowdsec
-GH_TAGNAME=	${DISTVERSIONFULL}-freebsd
-_BUILD_TAG=	712a2d1d
+_BUILD_TAG=	b76e95e3
 USE_RC_SUBR=	crowdsec
 
 MAKE_ARGS=	BUILD_VERSION="${DISTVERSIONFULL}" \
