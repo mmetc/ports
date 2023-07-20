@@ -1,7 +1,7 @@
 PORTNAME=	crowdsec-firewall-bouncer
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.28
-DISTVERSIONSUFFIX=	r1
+DISTVERSION=	0.0.27
+PORTREVISION=	7
 CATEGORIES=	security
 
 MAINTAINER=	marco@crowdsec.net
@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go:modules
-_COMMIT=	c8322311
+_COMMIT=	8d09f19d
 _BUILD_DATE=	$$(date -u "+%F_%T")
 USE_RC_SUBR=	crowdsec_firewall
 
@@ -21,7 +21,7 @@ GO_TARGET=	${PORTNAME}:./${PORTNAME}
 GO_BUILDFLAGS=	-trimpath -tags netgo \
 		-ldflags="\
 		-a -s -w -extldflags '-static' \
-		-X github.com/crowdsecurity/go-cs-lib/pkg/version.Version=${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX} \
+		-X github.com/crowdsecurity/go-cs-lib/pkg/version.Version=${DISTVERSIONPREFIX}${DISTVERSION} \
 		-X github.com/crowdsecurity/go-cs-lib/pkg/version.BuildDate=${_BUILD_DATE} \
 		-X github.com/crowdsecurity/go-cs-lib/pkg/version.Tag=${_COMMIT}"
 
