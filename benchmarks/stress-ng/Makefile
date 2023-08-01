@@ -1,6 +1,7 @@
 PORTNAME=	stress-ng
 DISTVERSIONPREFIX=	V
-DISTVERSION=	0.15.08
+DISTVERSION=	0.16.02
+PORTREVISION=	1
 CATEGORIES=	benchmarks
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -9,6 +10,8 @@ WWW=		http://kernel.ubuntu.com/~cking/stress-ng/
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS+=libmpfr.so:math/mpfr
 
 USES=		compiler:c11 gmake jpeg localbase:ldflags
 USE_GITHUB=	yes
@@ -54,7 +57,6 @@ pre-patch:
 .if ${ARCH} == i386
 	${TOUCH} ${WRKSRC}/configs/HAVE_VECMATH
 .endif
-
 
 #to dsiable Intel IPSEC detection
 post-patch-INTELIPSEC-off:

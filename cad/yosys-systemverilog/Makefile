@@ -10,6 +10,8 @@ WWW=		https://github.com/antmicro/yosys-systemverilog
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN=		incompatible yet with the latest cad/uhdm, see https://github.com/antmicro/yosys-systemverilog/issues/1845
+
 BUILD_DEPENDS=	bash:shells/bash \
 		yosys>0:cad/yosys
 LIB_DEPENDS=	libcapnp.so:devel/capnproto \
@@ -51,6 +53,8 @@ OPTIONS_DEFAULT=	TCMALLOC # should be the same TCMALLOC default as in cad/yosys,
 
 TCMALLOC_LDFLAGS=	`pkg-config --libs libtcmalloc`
 TCMALLOC_LIB_DEPENDS=	libtcmalloc.so:devel/google-perftools
+
+PORTSCOUT=	ignore:1 # until https://github.com/antmicro/yosys-systemverilog/issues/1798 is resolved
 
 post-extract:
 	@${CP} ${WRKSRC_yosys}/passes/pmgen/pmgen.py ${WRKSRC}/yosys-f4pga-plugins

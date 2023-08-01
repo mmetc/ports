@@ -113,7 +113,6 @@
     SUBDIR += qemu-powernv
     SUBDIR += qemu-user-static
     SUBDIR += qemu-user-static-devel
-    SUBDIR += qemu6
     SUBDIR += qemu7
     SUBDIR += qmc2
     SUBDIR += quasi88
@@ -173,6 +172,7 @@
     SUBDIR += wine-mono
     SUBDIR += wine-mono-devel
     SUBDIR += wine-proton
+    SUBDIR += wine7
     SUBDIR += winetricks
     SUBDIR += x16-emulator
     SUBDIR += x16-rom

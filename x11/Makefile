@@ -50,6 +50,7 @@
     SUBDIR += controllermap
     SUBDIR += cool-retro-term
     SUBDIR += coreterminal
+    SUBDIR += damask
     SUBDIR += deforaos-keyboard
     SUBDIR += deforaos-libdesktop
     SUBDIR += deskmenu
@@ -272,12 +273,14 @@
     SUBDIR += nvidia-xconfig
     SUBDIR += nwg-bar
     SUBDIR += nwg-dock
+    SUBDIR += nwg-dock-hyprland
     SUBDIR += nwg-drawer
     SUBDIR += nwg-launchers
     SUBDIR += nwg-look
     SUBDIR += nwg-menu
     SUBDIR += nxcomp
     SUBDIR += openrgb
+    SUBDIR += oscar
     SUBDIR += p5-Clipboard
     SUBDIR += p5-X11-GUITest
     SUBDIR += p5-X11-IdleTime
@@ -328,6 +331,7 @@
     SUBDIR += remontoire
     SUBDIR += rendercheck
     SUBDIR += rgb
+    SUBDIR += rio
     SUBDIR += rlaunch
     SUBDIR += rofi
     SUBDIR += rofi-calc
@@ -342,6 +346,7 @@
     SUBDIR += rxvt-unicode
     SUBDIR += sakura
     SUBDIR += salut
+    SUBDIR += sandbar
     SUBDIR += sbxkb
     SUBDIR += screen-message
     SUBDIR += screengrab
@@ -411,6 +416,7 @@
     SUBDIR += virtualgl
     SUBDIR += wallutils
     SUBDIR += wapanel
+    SUBDIR += watershot
     SUBDIR += way-displays
     SUBDIR += waybar
     SUBDIR += wayidle
@@ -428,6 +434,7 @@
     SUBDIR += wl-mirror
     SUBDIR += wlogout
     SUBDIR += wlr-randr
+    SUBDIR += wlr-which-key
     SUBDIR += wlrctl
     SUBDIR += wmappl
     SUBDIR += wmblob
@@ -487,6 +494,7 @@
     SUBDIR += xconsole
     SUBDIR += xcursorgen
     SUBDIR += xcut
+    SUBDIR += xdg-desktop-portal-gnome
     SUBDIR += xdg-desktop-portal-gtk
     SUBDIR += xdg-desktop-portal-hyprland
     SUBDIR += xdg-desktop-portal-wlr
