@@ -31,7 +31,8 @@ MAKE_ARGS=	BUILD_VERSION="${DISTVERSIONPREFIX}${DISTVERSION}-freebsd" \
 		BUILD_TAG="${GH_TAGNAME}" \
 		BUILD_VENDOR_FLAGS="-mod=vendor -modcacherw" \
 		DEFAULT_CONFIGDIR="${PREFIX}/etc/crowdsec" \
-		DEFAULT_DATADIR="/var/db/crowdsec/data"
+		DEFAULT_DATADIR="/var/db/crowdsec/data" \
+		BUILD_STATIC=1
 
 ALL_TARGET=	build
 
